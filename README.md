@@ -13,17 +13,17 @@ https://github.com/claudemods/SystemUpdateMenuArch/releases/download/v1.0/Update
 
 and unpack to the follow locations depending on your plasma version as its needed for this menu to work
 
-For kde5 move the downloaded scripts.sh file file to ~/.local/share/kservices5/ServiceMenus (create the folder if it's missing)
+For kde5 move the downloaded Updated.sh file file to ~/.local/share/kservices5/ServiceMenus (create the folder if it's missing)
 Also use right click on the file > Properties > Permissions > And mark the checkbox next to the text "Is executable".
 or use $ chmod +x ./Updater.sh
 
-For kde6 move the downloaded scripts.sh
+For kde6 move the downloaded Updater.sh
 to ~/.local/share/kio/servicemenus/ (create the folder if it's missing)
 Also use right click on the file > Properties > Permissions > And mark the checkbox next to the text "Is executable".
 use $ chmod +x ./Updater.sh
 
 commands used in this menu are
-sudo apt update -y
-sudo apt full-upgrade -y
+sudo pacman -Sy --noconfirm
+sudo pacman -Syu --noconfirm
 
 support me on paypal with link https://paypal.me/claudemods?country.x=GB&local
